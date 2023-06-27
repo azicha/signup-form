@@ -1,6 +1,10 @@
+import SignUp from './components/SignUp' 
+
 export default function App() {
   return (
-    <div>Hello World</div>
+    <div>
+      <SignUp />
+    </div>
   )
 }
 
