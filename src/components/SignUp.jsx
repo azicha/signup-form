@@ -1,5 +1,5 @@
-import { useState } from "react"
-
+import { useState } from "react";
+// import { Link } from "react-router-dom";
 export default function SignUp() {
     const [signupData, setSignupData] = useState({
         firstName: "",
@@ -85,7 +85,7 @@ export default function SignUp() {
                     name="confirmPassword"
                     value={signupData.confirmPassword}
                 />
-                {passwordMessage !== "" && <p>{ passwordMessage }</p>}
+                {passwordMessage !== "" && <p className="text-red-500">{ passwordMessage }</p>}
                 <div className="p-2 space-x-2">
                     <input
                         className="border-2 rounded-md border-blue-200"
@@ -108,8 +108,9 @@ export default function SignUp() {
                 </div>
                 <div className="text-center">
                     <button type="submit" className="bg-black text-white p-2 px-4 w-fit rounded-full hover:outline-none">
-                        Submit Form
+                        Sign Up
                     </button>
+                    <p>Already have an account?<a href="#" className="text-blue-900 underline">Log In</a></p>
                 </div>
                 
             </form>
